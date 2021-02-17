@@ -96,14 +96,14 @@ export default class App extends React.Component {
             {publishVideo ? 'Disable' : 'Enable'} Video
           </button>
           <OTPublisher
-            properties={{ publishVideo, width: 100, height: 100, }}
+            properties={{ publishVideo, width: 150, height: 100, }}
             onPublish={this.onPublish}
             onError={this.onPublishError}
             eventHandlers={this.publisherEventHandlers}
           />
           <OTStreams>
             <OTSubscriber
-              properties={{ width: 300, height: 250 }}
+              properties={{ width: 500, height: 350 }}
               onSubscribe={this.onSubscribe}
               onError={this.onSubscribeError}
               eventHandlers={this.subscriberEventHandlers}
